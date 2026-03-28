@@ -1,0 +1,27 @@
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.leaf {
+  font-size: 20px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.footer-text {
+  color: #777;
+  font-size: 14px;
+}

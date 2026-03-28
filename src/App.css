@@ -1,38 +1,318 @@
-.App {
-  text-align: center;
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Montserrat", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #002714;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+  text-decoration: none;
+}
+.header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  max-width: 1440px;
+  width: 100%;
+  padding: 45px 89px;
+  margin: 0 auto;
+background-color: rgba(0, 39, 20, 0.9); 
+backdrop-filter: blur(5px); 
+border-bottom: 1px solid #ffffff8a;
+}
+.header__wrapper{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header__logo__text{
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 27px;
+line-height: 143%;
+letter-spacing: 0em;
+color: #fff;
+}
+.header__nav{
+  display: flex;
+  align-items: center;
+  gap: 86px;
+
+}
+.header__nav a{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 19px;
+line-height: 141%;
+color: #fff;
+cursor: pointer;
+}
+.header__nav a:hover{
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 19px;
+line-height: 141%;
+
+color: #c9cf43;
+}
+
+.home__hero{
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  padding: 210px 89px 64px;
+  margin: 0 auto;
+margin-bottom: 120px;
+}
+.hero__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.hero__content{
+  position: relative;
+}
+.hero__content h1{
+  font-family: var(--third-family);
+font-weight: 900;
+font-size: 88px;
+line-height: 123%;
+letter-spacing: 0em;
+color: #c9cf43;
+margin-bottom: 20px;
+}
+.hero__content p{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 25px;
+line-height: 141%;
+letter-spacing: 0em;
+color: #fff;
+margin-bottom: 20px;
+}
+.hero__content button{
+  width: 320px;
+  height: 65px;
+  background-color: #c9cf43;
+  border-radius: 50px;
+  border: none;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 70px;
+  font-family: var(--third-family);
+font-weight: 900;
+font-size: 19px;
+line-height: 122%;
+letter-spacing: 0.01em;
+color: #00331a;
+}
+.hero__img{
+  position: relative;
+  width: 774px;
+  image{
+    width: 100%;
+  }
+}
+.chap{
+  position: absolute;
+bottom: 0;
+left: -10px;
+z-index: 6;
+}
+.orta{
+    position: absolute;
+    z-index: 6;
+    top: 161px;
+    left: 50%;
+    right: 50%;
+    margin: 0 auto;
+}
+.ong{
+    position: absolute;
+    z-index: 6;
+    top: 5px;
+    right: 0;
+}
+.salat{
+    position: absolute;
+    z-index: 6;
+    bottom: -92px;
+    right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.problem{
+  max-width: 1440px;
+  width: 100%;
+  padding: 210px 0 48px 0;  
+  margin: 0 auto;
+}
+.problem__content{
+  position: relative;
+  width: 100%;
+
+
+}
+.problem h2{
+  font-family: var(--third-family);
+font-weight: 900;
+font-size: 53px;
+line-height: 122%;
+letter-spacing: 0em;
+color: #c9cf43;
+text-align: center;
+}
+.problem__p{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 29px;
+line-height: 141%;
+letter-spacing: 0.03em;
+width: 557px;
+margin: 0 auto;
+margin-top: 41px;
+margin-bottom: 48px;
+color: #fff;}
+.problem ul{
+  width: 745px;
+  margin: 0 auto;
+  
+}
+.problem ul li{
+  width: 100%;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 19px;
+line-height: 142%;
+color: #fff;
+line-height: 170%;
+margin: 0 auto;
+margin-bottom: 2px;
+opacity: 0.8;
+}
+.omillar{
+  padding-left: 30px;
+  margin-bottom: 35px;
+}
+.omillar li{
+  list-style-type: circle;
+
+}
+.muammo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+.pr__chap{
+  position: absolute;
+      bottom: -53px;
+    left: 80px;
+    z-index: 6;
+}
+.pr__orta{
+  position: absolute;
+      top: -70px;
+    left: 50%;
+    right: 50%;
+    margin: 0 auto;
+    z-index: 6;
+}
+.pr__ong{
+  position: absolute;
+      bottom: -53px;
+    right: 0;
+    z-index: 6;
+}
+.pr__salat{
+  position: absolute;
+
+     top: -70px;
+    right: 0;
+    z-index: 6;
+}
+.semizlik{
+  position: relative;
+  padding-top: 280px;
+  padding-left: 89px;
+  width: 1440px;
+  margin: 0 auto;
+  padding-bottom:168px ;
+}
+.semizlik h2{
+    font-family: var(--third-family);
+font-weight: 900;
+font-size: 53px;
+line-height: 122%;
+letter-spacing: 0em;
+color: #c9cf43;
+margin-left: 20px;
+
+}
+.sem__p li{
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 29px;
+line-height: 141%;
+letter-spacing: 0.03em;
+width: 589px;
+margin-left: 80px;
+margin-top: 76px;
+margin-bottom: 67px;
+color: #fff;
+}
+.semizlik__li{
+    width: 865px;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 37px;
+line-height: 140%;
+color: #fff;
+
+margin-bottom: 2px;
+opacity: 0.8;
+}
+.sem__chap{
+  position: absolute;
+     bottom: 80px;
+    left: 60px;
+    z-index: 6;
+}
+.sem__orta{
+   position: absolute;
+      top: 228px;
+    left: 50%;
+    right: 50%;
+    margin: 0 auto;
+    z-index: 6;
+}
+.sem__salat{
+  position: absolute;
+ 
+    right: 0;
+    z-index: 6;
+}
+.chap__salat{
+  position: absolute;
+ top: 188px;
+    left: 0;
+    z-index: 6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
