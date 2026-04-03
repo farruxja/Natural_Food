@@ -8,22 +8,22 @@ function Hero() {
   return (
     <section className='home__hero' id='hero'>
       
-      <img className='orta' src={ong} alt="Onga qayrilgan" />
-      <img className='salat' src={ong_salat} alt="Hero" />
+      <img className='orta' data-aos="fade-up" src={ong} alt="Onga qayrilgan" />
+      <img className='salat' data-aos="fade-left" src={ong_salat} alt="Hero" />
 
       <div className="hero__wrapper">
-        <div className="hero__content">
-            <img className='chap' src={chap} alt="Chapga qayrilgan" />
+        <div className="hero__content"data-aos="fade-right">
+            <img className='chap'data-aos="fade-right" src={chap} alt="Chapga qayrilgan" />
             <h1>NATURAL
 FOOD
 INDUSTRY</h1>
 <p>“Natural Food” g’oyasi asosidagi prezentatsiya</p>
-<a href="https://t.me/"><button>BERDIYEVA E’ZOZA</button></a>
+<a href="https://t.me/basic555555"><button>BERDIYEVA E’ZOZA</button></a>
         </div>
-        <div className="hero__img">
-      <img className='ong' src={chap} alt="Ong salat" />
+        <div className="hero__img" data-aos="fade-left">
+      <img className='ong'data-aos="fade-left" src={chap} alt="Ong salat" />
 
-            <img src={hero} alt="Hero" />
+            <img src={hero} alt="Hero"  />
         </div>
       </div>
     </section>

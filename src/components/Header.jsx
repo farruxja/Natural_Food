@@ -18,7 +18,7 @@ function Header() {
      <div className="header__nav">
         <a href="#hero">Home</a>
         <a href="#problem">Muammolar</a>
-        <a href="#footer">Aloqa</a>
+        <a href="#products">Mahsulotlarimiz</a>
      </div>
 </div>
       

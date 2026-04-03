@@ -2,7 +2,7 @@
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 80px 20px 80px;
+  padding: 10px 20px 80px;
   background: #f9fafb;
   min-height: 100vh;
 
@@ -22,7 +22,9 @@
 }
 
 .back-link:hover {
-  color: #000;
+color: #b1ce3b;
+ filter: drop-shadow( 0 4px 10px #b1ce3b);
+ background-color: transparent ;
 }
 
 /* hero */
@@ -79,6 +81,15 @@ width: 484px;
   padding: 20px;
   border-radius: 16px;
   margin-top: 15px;
+}
+.info-card h4{
+  color: #b1ce3b;
+      font-weight: 700;
+          font-size: 0.875rem;
+    line-height: 1.25rem
+;
+margin-bottom: 8px;
+font-family: Montserrat, sans-serif;
 }
 .info-card h3{
   display: inline-flex;

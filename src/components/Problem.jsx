@@ -6,13 +6,13 @@ import salat from "../img/problem.png"
 function Problem() {
   return (
     <section className='problem' id='problem'>
-       <div className="problem__content">
-         <img className='muammo' src={muammo} alt="Muammo" />
-        <img className='pr__chap' src={chap} alt="Chapga qayrilgan" />
-        <img className='pr__orta' src={ong} alt="Ongga qayrilgan" />
-        <img className='pr__salat' src={salat} alt="Salat" />
-        <img className='pr__ong' src={chap} alt="Chapga qayrilgan" />
-      <h2>MUAMMO VA SABABLAR</h2>
+       <div className="problem__content" data-aos="fade-up">
+         <img className='muammo' data-aos="fade-up-right" src={muammo} alt="Muammo" />
+        <img className='pr__chap' data-aos="fade-right" src={chap} alt="Chapga qayrilgan" />
+        <img className='pr__orta' data-aos="fade-down" src={ong} alt="Ongga qayrilgan" />
+        <img className='pr__salat' data-aos="fade-left" src={salat} alt="Salat" />
+        <img className='pr__ong'data-aos="fade-left" src={chap} alt="Chapga qayrilgan" />
+      <h2 data-aos="fade-up">MUAMMO VA SABABLAR</h2>
       <li className="problem__p">O‘zbekiston, 2025 yilda jami 177 104
 nafar odam vafot etgan.</li>
 <ul>
@@ -24,8 +24,7 @@ nafar odam vafot etgan.</li>
     <li>Nafas olish kasalliklari: 13 %</li>
     <li>Hazm qilish tizimi kasalliklari: 10 %</li>
   </div>
-  <li>Bog‘liqlik: ortiqcha shakar va semizlik yurak, qon aylanish tizimi va boshqa
-kasalliklarga olib keladi</li>
+  <li>Bu kasalliklarning aksariyati turmush tarzi va ovqatlanish bilan bog‘liq</li>
 </ul>
        </div>
     </section>

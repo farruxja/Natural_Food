@@ -38,11 +38,11 @@ const ProductPage = () => {
         </Link>
 
         <div className="hero">
-          <div className="hero-image">
+          <div className="hero-image" data-aos="fade-right">
             <img src={imgSrc} alt={product.name} />
           </div>
 
-          <div className="hero-content">
+          <div className="hero-content" data-aos="fade-left">
             <span className="emoji">{product.emoji}</span>
             <h1 className="title">{product.name}</h1>
 
@@ -59,7 +59,7 @@ const ProductPage = () => {
 
         <div className="info-grid">
 
-          <div className="info-card">
+          <div className="info-card" data-aos="fade-right">
             <h3>Vitamin va minerallar</h3>
 
             <h4>Vitaminlar:</h4>
@@ -79,7 +79,7 @@ const ProductPage = () => {
 
           <div className="right-cards">
 
-            <div className="info-card">
+            <div className="info-card"data-aos="fade-left">
               <h3>Kaloriyasi</h3>
               <ul>
                 {product.kaloriya.map((k, i) => (
@@ -88,7 +88,7 @@ const ProductPage = () => {
               </ul>
             </div>
 
-            <div className="info-card">
+            <div className="info-card" data-aos="fade-left">
               <h3>Ustuvorliklari</h3>
               <ul>
                 {product.ustuvorlik.map((u, i) => (

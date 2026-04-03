@@ -7,19 +7,21 @@ function Semizlik() {
   return (
     <section className='semizlik'>
         <img src={chap__salat} className='chap__salat' alt="" />
-        <img className='sem__chap' src={chap} alt="Chapga qayrilgan" />
-        <img className='sem__orta' src={orta} alt="Onga qayrilgan" />
-        <img className='sem__salat' src={qulupnay} alt="Qulupnay asarti" />
-      <h2>SEMIZLIK VA SHIRINLIKLAR</h2>
+        <img className='sem__chap'data-aos="fade-right" src={chap} alt="Chapga qayrilgan" />
+        <img className='sem__orta' data-aos="fade-down"src={orta} alt="Onga qayrilgan" />
+        <img className='sem__salat' data-aos="fade-left" src={qulupnay} alt="Qulupnay asarti" />
+      <h2 data-aos="fade-right">SEMIZLIK VA SHIRINLIKLAR</h2>
       <div className="sem__p">
-        <li>O‘zbekiston kattalar va yoshlar orasida
-ortiqcha vazn ~25–30 %</li>
+        <li data-aos="fade-right">O‘zbekistonda ortiqcha vazn:</li>
+        <li data-aos="fade-right">25–30% (yoshlar va kattalarda)</li>
+        <li data-aos="fade-right">Chips, shokolad, shirinliklar:</li>
+        <li data-aos="fade-right">tez hazm bo‘ladi</li>
+        <li data-aos="fade-right">qondagi shakarni tez oshiradi</li>
+        <li data-aos="fade-right">yana ochlik hissini keltiradi</li>
       </div>
-      <li className='semizlik__li'>
-        Chipslar, krekerslar va shokoladlar tez hazm
-bo‘ladi, qon shakarini tez oshiradi → ortiqcha
-kaloriyaga olib keladi
-      </li>
+   <h4 data-aos="fade-right" className='sabab__h4' >Natijada</h4>
+  <li data-aos="fade-right" className='sabab__li'>Ortiqcha kaloriya → semizlik → kasalliklar</li>
+
     </section>
   )
 }

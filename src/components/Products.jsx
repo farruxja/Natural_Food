@@ -24,15 +24,15 @@ const Products = () => {
       <div className="container">
 
         <div className="products-header">
-          <h2 className="products-title">
+          <h2 className="products-title" data-aos="fade-up">
             Mahsulotlarimiz Ro'yxati
           </h2>
-          <p className="products-subtitle">
+          <p className="products-subtitle" data-aos="fade-up">
             Tabiiy, kam kaloriyali, foydali
           </p>
         </div>
 
-        <div className="products-grid">
+        <div className="products-grid" data-aos="fade-up">
           {products.map((product, i) => (
             <Link
               key={product.id}

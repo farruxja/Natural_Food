@@ -1,0 +1,120 @@
+.goya{
+    max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+    margin-bottom:68px ;
+}
+.goya h2{
+      font-family: var(--third-family);
+font-weight: 900;
+font-size: 53px;
+line-height: 122%;
+letter-spacing: 0em;
+color: #c9cf43;
+text-align: center;
+}
+.goya__p{
+      font-family: var(--font-family);
+font-weight: 600;
+font-size: 29px;
+line-height: 141%;
+letter-spacing: 0.03em;
+
+margin-top: 41px;
+margin-bottom: 48px;
+color: #fff;
+}
+.goya ul{
+width: 745px;
+margin: 0 auto;
+}
+.goya__li{
+      width: 100%;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 19px;
+line-height: 142%;
+color: #fff;
+line-height: 170%;
+margin: 0 auto;
+margin-bottom: 2px;
+opacity: 0.8;
+list-style: disc;
+}
+.animatedWord {
+  display: inline-block;
+  font-weight: 900;
+  color: #c9cf43; /* Tugma ichidagi matn rangi */
+  position: relative;
+  animation: pulseGlow 2s infinite ease-in-out;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+@keyframes pulseGlow {
+  0% {
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+  50% {
+    /* So'z atrofida oq/lime nur taraladi va so'z biroz kattalashadi */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(205, 220, 57, 0.4);
+    transform: scale(1.02);
+    color: #c9cf43; /* Nur tushganda matn biroz to'qlashadi */
+  }
+  100% {
+    text-shadow: 0 0 0px rgba(255, 255, 255, 0);
+    transform: scale(1);
+  }
+}
+
+/* Tugmaning o'ziga ham biroz "nafas oluvchi" effekt beramiz */
+
+
+.ctaButton:hover .animatedWord {
+  animation-play-state: paused; /* Sichqoncha ustiga kelganda animatsiya to'xtaydi */
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+.yechim{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+    margin-bottom:195px ;
+    padding-top: 250px;
+}
+.yechim h2{
+          font-family: var(--third-family);
+font-weight: 900;
+font-size: 53px;
+line-height: 122%;
+letter-spacing: 0em;
+color: #c9cf43;
+text-align: center;
+}
+.yechim__wrapper{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+
+}
+.yechim__h4{
+      font-family: var(--font-family);
+font-weight: 600;
+font-size: 29px;
+line-height: 141%;
+letter-spacing: 0.03em;
+
+margin-top: 41px;
+margin-bottom: 15px;
+color: #fff;
+margin-left: -20px;
+}
