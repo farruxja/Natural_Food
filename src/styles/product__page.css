@@ -149,3 +149,125 @@ li {
   flex-direction: column;
   gap: 20px;
 }
+/* Narx stili */
+.price-tag {
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 10px 0;
+}
+
+/* Katta buyurtma tugmasi */
+.buy-btn-large {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.buy-btn-large:hover {
+  background-color: #219150;
+  transform: translateY(-2px);
+}
+
+/* Katta miqdor o'zgartirgich */
+.quantity-box-large {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #27ae60;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.q-btn-l {
+  background: #27ae60;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.q-btn-l:hover {
+  background: #219150;
+}
+
+.q-num-l {
+  padding: 0 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Buyurtma bo'limi konteyneri */
+.order-section-compact {
+  display: flex;
+  justify-content: flex-start; /* Chapga surish */
+  margin: 15px 0 25px 0;
+  background-color: #fff
+  ;
+  max-width: 119px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Ingichka va kichikroq buyurtma tugmasi */
+.buy-btn-sm {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 30px; /* Ingichka qilish uchun padding kamaytirildi */
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn-sm:hover {
+  background-color: #219150;
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.3);
+}
+
+/* Ixcham miqdor o'zgartirgich */
+.quantity-box-compact {
+  display: flex;
+  align-items: center;
+  border: 1px solid #27ae60;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 38px; /* Balandligi cheklandi */
+}
+
+.q-btn-sm {
+  background: #27ae60;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.q-num-sm {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.q-btn-sm:active {
+  background: #1e7e43;
+}

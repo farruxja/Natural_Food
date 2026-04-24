@@ -11,6 +11,9 @@
 }
 body{
   background-color: #002714;
+
+  overflow-x: hidden; /* O'ngga/chapga skrollni butunlay yo'qotadi */
+  width: 100%;
 }
 a{
   text-decoration: none;
@@ -50,7 +53,7 @@ color: #fff;
 .header__nav{
   display: flex;
   align-items: center;
-  gap: 86px;
+  gap: 60px;
 
 }
 .header__nav a{
@@ -69,6 +72,276 @@ line-height: 141%;
 
 color: #c9cf43;
 }
+.box__content{
+  height: 100%;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+/* Savatcha (Sidebar) umumiy ko'rinishi */
+.box {
+  position: fixed; /* absolute emas, fixed qilsang qulayroq */
+  right: 0;
+  top: 0;
+  width: 380px; /* Ozgina kengaytirdik */
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95); /* Shaffof oq */
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  transform: translateX(2000px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 25px;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.box__active {
+  transform: translateX(0);
+}
+
+/* Ichki kontentni scroll bo'ladigan qilish */
+.box__content {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 20px;
+  padding-right: 5px;
+}
+
+/* Scrollbar dizayni */
+.box__content::-webkit-scrollbar {
+  width: 5px;
+}
+.box__content::-webkit-scrollbar-thumb {
+  background: #c9cf43;
+  border-radius: 10px;
+}
+
+/* Yopish tugmasi */
+.remove {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: 0.3s;
+}
+.remove:hover {
+  transform: rotate(90deg);
+  color: #ff4d4d;
+}
+
+/* Savatchadagi mahsulot kartasi */
+.cart__item {
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.cart__item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.cart__item img {
+  border-radius: 8px;
+  object-fit: cover;
+  background: #eee;
+}
+
+.cart__item h4 {
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.cart__item p {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Miqdorni boshqarish (Plus/Minus) */
+.quantity__controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.quantity__controls button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.quantity__controls button:hover {
+  background: #c9cf43;
+  color: white;
+  border-color: #c9cf43;
+}
+
+.quantity__controls span {
+  font-family: var(--second-family);
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Jami summa qismi (Pastki qism) */
+.total__section {
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+  margin-top: auto; /* Pastga yopishtiradi */
+}
+
+.total__section h3 {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--third-family);
+  font-size: 20px;
+  color: #00331a;
+}
+
+/* Bo'sh savatcha stili */
+.bosh {
+  text-align: center;
+  margin-top: 100px;
+  color: #999;
+  font-family: var(--font-family);
+}
+/* Modal orqa foni (Overlay) */
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+ height: 100vh;
+  background: rgba(0, 0, 0, 0.85); /* Qorong'uroq fon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000; /* Hammadan ustun turishi uchun */
+  backdrop-filter: blur(8px);
+}
+
+/* Modal oynasi */
+.payment-modal {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: modalShow 0.3s ease-out;
+    margin-top: 20px;
+}
+
+@keyframes modalShow {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.payment-modal h2 {
+  color: #00331a;
+  margin-bottom: 25px;
+  font-family: var(--third-family);
+
+}
+
+/* Karta ma'lumotlari qutisi */
+.card-info-box {
+  background: #f4fcf7;
+  border: 2px dashed #27ae60;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+.card-holder {
+  font-size: 16px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Inputlar stili */
+.input-group {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* To'ladim tugmasi */
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pay-btn:hover {
+  background: #1e7e43;
+  transform: translateY(-2px);
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #c9cf43;
+  color: #00331a;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
 
 .home__hero{
   position: relative;

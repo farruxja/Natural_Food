@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './Pages/ErrorPage';
 import HomePage from './Pages/HomePage';
 import ProductPage from './Pages/ProductPage';
+import RecipePage from './Pages/RecipePage';
 
 
 
@@ -22,6 +23,10 @@ const myRouter =createBrowserRouter([
       {
         path:"/product/:id",
         element:<ProductPage/>
+      },
+      {
+        path:"/recipe/:id",
+        element:<RecipePage/>
       }
     ]
   }

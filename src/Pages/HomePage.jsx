@@ -5,6 +5,7 @@ import Semizlik from '../components/Semizlik'
 import Products from '../components/Products'
 import Sabab from '../components/Sabab'
 import Yechim from '../components/Yechim'
+import RecipeList from '../components/RecipeList'
 
 
 function HomePage() {
@@ -16,6 +17,7 @@ function HomePage() {
       <Semizlik/>
       <Yechim/>
     <Products/>
+    <RecipeList/>
 
    
     </main>
